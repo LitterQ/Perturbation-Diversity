@@ -29,7 +29,7 @@ sh ./fs_eval_cifar10.sh
 ```
 
 ### Reference Model
-A reference model trained on CIFAR-10 is [here](https://drive.google.com/file/d/18NOtz_z29iMKdv92xTkXhZLVeCvg0N_o/view?usp=sharing).
+A reference model trained on CIFAR-10 is [CIFAR-10](https://drive.google.com/file/d/1HyP3BnxnginQtD96Caq1OH1V3UMQDK-k/view?usp=sharing).
 
 A reference model trained on CIFAR-100 is [here](https://drive.google.com/file/d/1ZlNAqWvajZfNEQifTWqbBJjPdcXIjKhY/view?usp=sharing).
 
