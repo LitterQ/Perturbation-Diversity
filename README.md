@@ -6,12 +6,7 @@ This is the implementation of the
 
 The codes are implemented based on the released codes from ["Feature-Scattering Adversarial Training"](https://papers.nips.cc/paper/8459-defense-against-adversarial-attacks-using-feature-scattering-based-adversarial-training.pdf)
 
-## Usage
-### Installation
-The training environment (PyTorch and dependencies) can be installed as follows:
-```
-python setup.py install
-```
+
 Tested under Python 3.7.9 and PyTorch 1.8.0.
 
 ### Train
