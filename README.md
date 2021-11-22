@@ -4,7 +4,7 @@
 This is the implementation of the
 ["PERTURBATION DIVERSITY CERTIFICATES ROBUST GENERALIZATION"].
 
-The codes are implemented based on the released codes from "Feature-Scattering Adversarial Training" ["Code"](https://github.com/Haichao-Zhang/FeatureScatter) ["Paper"](https://papers.nips.cc/paper/8459-defense-against-adversarial-attacks-using-feature-scattering-based-adversarial-training.pdf)
+The codes are implemented based on the released codes from "Feature-Scattering Adversarial Training" [[Code]](https://github.com/Haichao-Zhang/FeatureScatter) [[Paper]](https://papers.nips.cc/paper/8459-defense-against-adversarial-attacks-using-feature-scattering-based-adversarial-training.pdf)
 
 
 Tested under Python 3.7.9 and PyTorch 1.8.0.
