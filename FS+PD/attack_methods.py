@@ -200,12 +200,12 @@ class Attack_FeaScatter(nn.Module):
 
 
             logits_pred, fea = aux_net(x)
-            #pert = torch.sign(x - inputs)
+            pert = torch.sign(x - inputs)
             #pert = x - inputs
-            #pert = pert.view(batch_size, 3*32*32)
+            pert = pert.view(batch_size, 3*32*32)
 
-            #mat = torch.matmul(pert, pert.t())
-            #reg = -torch.logdet(mat + 1e-6 * torch.eye(batch_size).cuda()).mean()
+            mat = torch.matmul(pert, pert.t())
+            reg = -torch.logdet(mat + 1e-6 * torch.eye(batch_size).cuda()).mean()
             #print(reg)
 
             ot_loss = ot.sinkhorn_loss_joint_IPOT(1, 0.00, logits_pred_nat,
@@ -217,7 +217,7 @@ class Attack_FeaScatter(nn.Module):
             
 
             aux_net.zero_grad()
-            adv_loss = ot_loss #- 10 * reg
+            adv_loss = ot_loss - 10 * reg
             adv_loss.backward(retain_graph=True)
             x_adv = x.data + self.step_size * torch.sign(x.grad.data)
             x_adv = torch.min(torch.max(x_adv, inputs - self.epsilon),
