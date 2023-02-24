@@ -1,7 +1,7 @@
 export PYTHONPATH=./:$PYTHONPATH
 model_dir=./models/test1/
 mkdir -p $model_dir
-CUDA_VISIBLE_DEVICES=4 python fs_main.py \
+CUDA_VISIBLE_DEVICES=1 python fs_main.py \
     --resume \
     --adv_mode='feature_scatter' \
     --lr=0.1 \
